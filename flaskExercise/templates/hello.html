@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    {% if score>=90 %}
+    <h1>You got A</h1>
+
+    {% elif score < 90 and >= 80 %}
+    <h1>You got B</h1>
+
+    {% elif score < 80 and >=70 %}
+    <h1>You got C</h1>
+
+    {% elif score < 70 and >=60 %}
+    <h1>You got D</h1>
+
+    {% else %}
+    <h1>Failed</h1>
+    {% endif %}
+
+
+    <h1> Coding Academy </h1>
+    <p> Amman, Jordan </p>
+
+</body>
+
+</html>
