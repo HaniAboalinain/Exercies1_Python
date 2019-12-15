@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index</title>
+    <style>
+        table {
+            font-family: Arial,sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td, th {
+            border: 1px solid grey;
+            text-align: left;
+            padding: 10px;
+        }
+        tr:nth-child(even) {
+            background-color:blue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>
+                date
+            </th>
+            <th>
+                trans
+            </th>
+            <th>
+                symbol
+            </th>
+            <th>
+                qty
+            </th>
+            <th>
+                price
+            </th>
+        </tr>
+        {% for stocke in stockes %}
+            <tr>
+                <td>{{ stocke[0] }}</td>
+                <td>{{ stocke[1] }}</td>
+                <td>{{ stocke[2] }}</td>
+                <td>{{ stocke[3] }}</td>
+                <td>{{ stocke[4] }}</td>
+            </tr>
+        {% endfor %} 
+    </table>
+</body>
+</html>
